@@ -1,0 +1,6 @@
+USE icd;
+
+CREATE TABLE diagnoses (
+  code  VARCHAR(10)  PRIMARY KEY,
+  title VARCHAR(255) NOT NULL
+) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;

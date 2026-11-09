@@ -1,0 +1,67 @@
+// Colors and fonts come from the Material 3 theme (styles.scss) via --mat-sys-* variables,
+// so this component automatically matches the theme.
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.header {
+  margin-bottom: 24px;
+
+  h1 {
+    font: var(--mat-sys-headline-medium);
+    color: var(--mat-sys-primary);
+    margin: 0 0 4px;
+  }
+
+  p {
+    margin: 0;
+    color: var(--mat-sys-on-surface-variant);
+  }
+}
+
+.search-field {
+  width: 100%;
+}
+
+.results {
+  margin-top: 16px;
+}
+
+.count {
+  margin: 0 0 8px;
+  color: var(--mat-sys-on-surface-variant);
+  font: var(--mat-sys-body-small);
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--mat-sys-on-surface-variant);
+
+  &.error {
+    color: var(--mat-sys-error);
+  }
+}
+
+.table-wrapper {
+  border: 1px solid var(--mat-sys-outline-variant);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.code {
+  width: 110px;
+  font-family: ui-monospace, Menlo, monospace;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+mark {
+  background-color: var(--mat-sys-tertiary-container);
+  color: var(--mat-sys-on-tertiary-container);
+  border-radius: 2px;
+}
